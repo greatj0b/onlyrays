@@ -8,12 +8,26 @@
     body {
         margin: 0;
         overflow: hidden;
+        padding: 0;
+        animation: gradientAnimation 10s infinite;
+        background-size: 400% 400%;
     }
 
     #dvd-logo {
         position: absolute;
         width: 10%; /* Adjust the size of the image */
         height: auto;
+    }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+    }
     }
 </style>
 </head>
